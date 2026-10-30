@@ -1,6 +1,7 @@
+ 
 import Logo from "@/assets/svg/Logo"
 import LoginForm from "@/components/form/loginForm"
- import Link from "next/link"
+  import Link from "next/link"
 
 
 export default function LoginPage() {
