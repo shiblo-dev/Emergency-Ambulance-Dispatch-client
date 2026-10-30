@@ -10,10 +10,10 @@ import Link from "next/link";
 export default function Header() {
   const routes = [
     { name: "Home", url: "/" },
-    { name: "About us", url: "/about-us" },
+    { name: "About us", url: "/aboutUs" },
     { name: "Services", url: "/services" },
     { name: "Blog", url: "/blog" },
-    { name: "Contact us", url: "/contact-us" },
+    { name: "Contact us", url: "/contact" },
   ];
 
   const dashboardRoute: Record<UserRole, string> = {

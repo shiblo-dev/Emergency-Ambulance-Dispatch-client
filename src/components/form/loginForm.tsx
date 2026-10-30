@@ -10,6 +10,7 @@ import { Button } from "../ui/button";
 import { Spinner } from "../ui/spinner";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { loginSchema } from "@/validation";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -19,18 +20,18 @@ export default function LoginForm() {
 
   const form = useForm({
     defaultValues: {
-      email: "superadmin@gmail.com",
-      password: "Super@admin12345",
+      email: "testeradmin@gmail.com",
+      password: "Tester@admin12345",
     },
-    // validators: {
-    //   onSubmit: loginSchema,
-    // },
+    validators: {
+      onSubmit: loginSchema,
+    },
     onSubmit: ({ value }) => {
       const loginData = {
         email: value.email,
         password: value.password,
       };
-
+console.log(loginData);
       login(loginData, {
         onSuccess: (res) => {
           toast.add({

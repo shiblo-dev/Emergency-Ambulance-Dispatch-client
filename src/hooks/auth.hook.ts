@@ -11,9 +11,6 @@ export function useLogout() {
     mutationFn: userLogout,
   });
 }
-
-
-
 export function useGetMe() {
   return useQuery({
     queryKey: ["user"],
