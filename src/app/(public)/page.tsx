@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
+import HomePage from "@/components/modules/homepage/Hero";
+
 
 export default function Home() {
   return (
     <div>
-      <div>Home Page</div>
-      <Button variant="default">Default</Button>
+      <HomePage />
     </div>
   );
 }

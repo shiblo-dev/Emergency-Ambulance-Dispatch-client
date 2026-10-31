@@ -61,7 +61,7 @@ const stats = [
   { value: "100%", label: "Tracked Requests" },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="w-full">
       {/* Hero */}
