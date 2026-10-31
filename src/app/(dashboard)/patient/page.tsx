@@ -1,5 +1,5 @@
 import React from 'react';
-
+export const instant = false;
 const PatientPage = () => {
     return (
         <div>

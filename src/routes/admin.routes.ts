@@ -9,8 +9,8 @@ export const adminRoutes = [
         url: `${prefix}`,
       },
       {
-        title: "Doctor Approval",
-        url: `${prefix}/approve-doctor`,
+        title: "Dispatcher Approval",
+        url: `${prefix}/approve-dispatcher`,
       },
     ],
   },

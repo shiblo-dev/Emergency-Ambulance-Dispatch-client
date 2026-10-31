@@ -1,5 +1,6 @@
 "use client";
 
+import Logo from "@/assets/svg/Logo";
  import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/toast";
 import { useGetMe, useLogout } from "@/hooks";
@@ -53,8 +54,8 @@ export default function Header() {
     <header className="w-full h-16 border border-b">
       <div className="flex justify-between items-center h-full max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
-          {/* <Logo /> */}
-          <span>PH Healthcare</span>
+          <Logo />
+          <span> Emergency Ambulance Dispatch</span>
         </div>
 
         <nav className="flex gap-5">

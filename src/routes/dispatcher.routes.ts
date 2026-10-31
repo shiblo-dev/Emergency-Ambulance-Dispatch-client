@@ -9,8 +9,8 @@ export const dispatcherRoutes = [
         url: `${prefix}`,
       },
       {
-        title: "Create Schedule",
-        url: `${prefix}`,
+        title: "Create dispatch",
+        url: `${prefix}/create-dispatch`,
       },
     ],
   },

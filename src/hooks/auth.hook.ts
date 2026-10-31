@@ -1,3 +1,4 @@
+" use client";
 import { getMe, googleOAuth, userLogin, userLogout, userRegistration, verifyAccount } from "@/api";
 import { useMutation, useQuery } from "@tanstack/react-query";
 

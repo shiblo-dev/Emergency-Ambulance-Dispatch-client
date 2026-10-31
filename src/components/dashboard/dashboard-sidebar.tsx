@@ -62,7 +62,7 @@ export function DashboardSidebar({ role }: { role: UserRole }) {
           </SidebarGroup>
         ))}
       </SidebarContent>
-      <SidebarRail />
+
     </Sidebar>
   );
 }
