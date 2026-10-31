@@ -1,11 +1,11 @@
 "use client";
 
 import Logo from "@/assets/svg/Logo";
- import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/toast";
 import { useGetMe, useLogout } from "@/hooks";
 import { UserRole } from "@/types";
- import { useQueryClient } from "@tanstack/react-query";
+import { useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
 
 export default function Header() {
@@ -18,7 +18,6 @@ export default function Header() {
   ];
 
   const dashboardRoute: Record<UserRole, string> = {
-
     ADMIN: "/admin",
     DISPATCHER: "/dispatcher",
     PATIENT: "/patient",
@@ -35,7 +34,9 @@ export default function Header() {
       onSuccess: () => {
         toast.add({
           title: "Tata",
-          description: "Logged out successfully",
+          description: (
+      <span className="text-green-600">Logged out successfully</span>
+    ),
           type: "success",
         });
         queryClient.removeQueries({ queryKey: ["user"] });
@@ -77,10 +78,14 @@ export default function Header() {
               Login
             </Button>
           )}
+
           {!isLoading && data && (
-            <Button onClick={handleLogout} variant="destructive">
-              Logout
-            </Button>
+            <div className="flex items-center justify-center gap-2">
+              <p>Welcome! <span className="  font-bold text-xl"> {data?.data?.name}</span></p>
+              <Button onClick={handleLogout} variant="destructive">
+                Logout
+              </Button>
+            </div>
           )}
         </div>
       </div>

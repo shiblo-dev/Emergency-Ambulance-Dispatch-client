@@ -1,8 +1,9 @@
- 
+import Services from "@/components/modules/services/page";
+
 const ServicesPage = () => {
     return (
         <div>
-            <h1>Services</h1>
+            <Services />
         </div>
     );
 };

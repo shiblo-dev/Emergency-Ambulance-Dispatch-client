@@ -1,10 +1,16 @@
-"use client"
+"use client";
 import { useLogin } from "@/hooks";
 import { useForm } from "@tanstack/react-form";
- import { useState } from "react";
+import { useState } from "react";
 import { toast } from "../ui/toast";
 import { Eye, EyeClosed } from "lucide-react";
- import { Field, FieldError, FieldGroup, FieldLabel, FieldSeparator } from "../ui/field";
+import {
+  Field,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+  FieldSeparator,
+} from "../ui/field";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Spinner } from "../ui/spinner";
@@ -32,9 +38,8 @@ export default function LoginForm() {
         email: value.email,
         password: value.password,
       };
-console.log(loginData);
       login(loginData, {
-        onSuccess: (res) => {
+        onSuccess: () => {
           toast.add({
             title: "Login Success",
             description: "Welcome back",
