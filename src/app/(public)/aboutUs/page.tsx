@@ -1,8 +1,9 @@
- 
+import About from "@/components/modules/about/page";
+
 const AboutUsPage = () => {
     return (
         <div>
-            <h1>About Us</h1>
+             <About />
         </div>
     );
 };

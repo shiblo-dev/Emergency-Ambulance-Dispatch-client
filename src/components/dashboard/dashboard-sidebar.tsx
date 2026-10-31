@@ -37,7 +37,7 @@ export function DashboardSidebar({ role }: { role: UserRole }) {
         <Link href="/">
           <div className="flex items-center gap-2">
             <Logo />
-            <span>PH Healthcare</span>
+            <span>Emergency Ambulance Dispatch</span>
           </div>
         </Link>
       </SidebarHeader>
