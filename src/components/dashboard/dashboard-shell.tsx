@@ -20,7 +20,7 @@ export default function DashboardShell({
       <DashboardSidebar role={role} />
       <SidebarInset>
         <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-          <p className="text-center w-full">Dashboard Header</p>
+          <p className="text-center font-extrabold text-2xl w-full text-blue-900">Dashboard</p>
         </header>
         {children}
       </SidebarInset>

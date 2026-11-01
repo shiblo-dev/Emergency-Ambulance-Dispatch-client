@@ -8,3 +8,8 @@ export function createHospital(payload: HospitalFormValues) {
     body: JSON.stringify(payload),
   });
 }
+export function getHospitals() {
+  return apiClient("/hospitals", {
+    method: "GET",
+  });
+}

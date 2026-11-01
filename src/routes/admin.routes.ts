@@ -4,13 +4,14 @@ export const adminRoutes = [
   {
     title: "Management",
     items: [
-      {
-        title: "Overview",
-        url: `${prefix}`,
-      },
+     
       {
         title: "Create Hospital",
         url: `${prefix}/create-hospital`,
+      },
+      {
+        title: "All Hospitals",
+        url: `${prefix}/all-hospitals`,
       },
     ],
   },

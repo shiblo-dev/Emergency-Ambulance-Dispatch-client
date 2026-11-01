@@ -556,7 +556,7 @@ const defaultValues: HospitalFormValues = {
             description: "Hospital has been created successfully",
             type: "success",
           });
-          router.push("/");
+          router.push("/admin/all-hospitals");
 
         },
       });
